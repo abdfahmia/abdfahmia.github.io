@@ -65,31 +65,31 @@ sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
 
-function calculateYear(birthMonth, birthDay, birthYear) {
-    const currentDate = new Date();
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth();
-    const currentDay = currentDate.getDate();
-    let calculatedAge = currentYear - birthYear;
+// function calculateYear(birthMonth, birthDay, birthYear) {
+//     const currentDate = new Date();
+//     const currentYear = currentDate.getFullYear();
+//     const currentMonth = currentDate.getMonth();
+//     const currentDay = currentDate.getDate();
+//     let calculatedAge = currentYear - birthYear;
 
-    if (currentMonth < birthMonth - 1) {
-        calculatedAge--;
-    }
-    if (birthMonth - 1 === currentMonth && currentDay < birthDay) {
-        calculatedAge--;
-    }
-    return calculatedAge;
-}
+//     if (currentMonth < birthMonth - 1) {
+//         calculatedAge--;
+//     }
+//     if (birthMonth - 1 === currentMonth && currentDay < birthDay) {
+//         calculatedAge--;
+//     }
+//     return calculatedAge;
+// }
 
-const experience = document.getElementById('experience')
-experience.innerHTML = calculateYear(2, 1, 2020).toString() + "+"
+// const experience = document.getElementById('experience')
+// experience.innerHTML = calculateYear(2, 1, 2020).toString() + "+"
 
-async function getPublicRepo() {
-    await fetch("https://api.github.com/users/abdfahmia")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("gh-project").innerHTML = `${data?.public_repos}+`
-        });
-}
+// async function getPublicRepo() {
+//     await fetch("https://api.github.com/users/abdfahmia")
+//         .then(response => response.json())
+//         .then(data => {
+//             document.getElementById("gh-project").innerHTML = `${data?.public_repos}+`
+//         });
+// }
 
-getPublicRepo().then()
+// getPublicRepo().then()
