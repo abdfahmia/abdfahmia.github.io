@@ -85,7 +85,7 @@ const experience = document.getElementById('experience')
 experience.innerHTML = calculateYear(2, 1, 2020).toString() + "+"
 
 async function getPublicRepo() {
-    await fetch("https://api.github.com/users/misrudin")
+    await fetch("https://api.github.com/users/abdfahmia")
         .then(response => response.json())
         .then(data => {
             document.getElementById("gh-project").innerHTML = `${data?.public_repos}+`
