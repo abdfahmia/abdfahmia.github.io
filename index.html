@@ -2,230 +2,328 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="site-assets/favicon/favicon.ico?" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="site-assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="site-assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="site-assets/favicon/favicon-16x16.png" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="site-assets/css/styles.css" />
 
-    <title>Portofolio | Abdul Fahmi Aziz</title>
+    <title>Abdul Fahmi A Portofolio</title>
 </head>
 
-<body id="home">
-    <!-- Navbar -->
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
+        <!-- Theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top ">
-        <div class="container">
-            <a class="navbar-brand" href="#">Abdul Fahmi A</a>
-            <button class="navbar-toggler" type="button " data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page " href="#home">Home</a>
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#contact">Contact </a>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <!-- Insert your image, according to the example size of the portfolio -->
+                        <img src="site-assets/img/profile.webp" alt="" />
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Abdul Fahmi Aziz</h2>
+                <h3 class="profile__profession">Backend developer - Cloud Engineer </h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/abdfahmia_" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdfahmia" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/abdfahmia" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number" id="experience"></h3>
+                    <p class="profile__info-description">
+                        Years of <br />
+                        work
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">10+</h3>
+                    <p class="profile__info-description">
+                        Completed <br />
+                        projects
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number" id="gh-project">10+</h3>
+                    <p class="profile__info-description">
+                        Github <br />
+                        projects
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <!-- Insert your CV -->
+                <a download="" href="./CV_AbdulFahmiAziz.pdf" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <!-- Insert a real number plus country code -->
+                    <a href="https://api.whatsapp.com/send?phone=087770173111&text=Hello, more information!"
+                        target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <!-- Insert your brand name or profile -->
+                    <a href="mailto: abdfahmia78@gmail.com" target="_blank" class="button button__small button__gray">
+                        <i class="ri-mail-line"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </nav>
-    <!-- Akhir Navbar -->
+    </header>
 
-    <!-- Jumbotron -->
-    <section class=" jumbotron text-center ">
-        <img src="img/mi.jpg " alt="Fahmi " width="200 " class="rounded-circle img-thumbnail " />
-        <h1 class="display-4 ">Abdul Fahmi Aziz</h1>
-        <p class="lead ">Student | Programmer</p>
-        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 ">
-        <path
-          fill="#ffffff "
-          fill-opacity="1 "
-          d="M0,96L48,101.3C96,107,192,117,288,144C384,171,480,213,576,240C672,267,768,277,864,240C960,203,1056,117,1152,90.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z "
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+                <button class="filters__button" data-target="#skills">Skills</button>
+            </ul>
 
-    <!-- About -->
-    <section id="about">
-        <div class="container ">
-            <div class="row text-center mb-5 ">
-                <div class="col ">
-                    <h2>About me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center fs-5 text-center ">
-                <div class="col-md-4 ">
-                    <p>Merupakan seorang mahasiswa di Universitas Ibn Khaldun Bogor, pada jurusan Teknik Informatika. Sampai saat ini saya berkuliah baru hingga semester 5</p>
-                </div>
-                <div class="col-md-4 ">
-                    <p>Untuk pengalaman saya, dalam berorganisasi saya pernah menjabat sebagai Ketua OSIS di MA Al-Riaydl Cipanas, dan juga wakil sekretaris Pondok Pesantren Al-Riyadl.</p>
-                </div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 ">
-        <path
-          fill="#e2edff "
-          fill-opacity="1 "
-          d="M0,128L40,128C80,128,160,128,240,117.3C320,107,400,85,480,96C560,107,640,149,720,144C800,139,880,85,960,58.7C1040,32,1120,32,1200,48C1280,64,1360,96,1400,112L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z "
-        ></path>
-      </svg>
-    </section>
+            <div class="filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="site-assets/img/smpn2kemang.webp" alt="" class="projects__img" />
 
-    <!-- Akhir about me -->
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">SMPN 2 Kemang Kab Bogor</h3>
+                                <a href="http://smpn2kemangkabbogor.sch.id/"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container ">
-            <div class="row text-center mb-3 ">
-                <div class="col ">
-                    <h2>My Projects</h2>
+                    <article class="projects__card">
+                        <img src="site-assets/img/desserthash.webp" alt="" class="projects__img" />
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">DessertHash</h3>
+                                <a href="https://github.com/abdfahmia/Projek-RPLL"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="site-assets/img/eperda-chat.webp" alt="" class="projects__img" />
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web / Mobile</span>
+                                <h3 class="projects__title">Eperda Chat</h3>
+                                <a href="https://github.com/abdfahmia/eperda-chat"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                        <img src="site-assets/img/bangkit.webp" alt="" class="projects__img" />
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Cloud</span>
+                                <h3 class="projects__title">Cloud Function for API</h3>
+                                <a href="https://github.com/Bangkit-C22-PS021"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="row justify-content-center ">
-                <div class="col-md-4 mb-3 ">
-                    <div class="card ">
-                        <img src="projects/logo1.jpg " class="card-img-top " alt="Project 1 " />
-                        <div class="card-body ">
-                            <p class="card-text text-center ">Pasukan Baris Berbaris 2017.</p>
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Website Developer</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS </h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">CLoud Computing
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Google Cloud Platform</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Iaas, Paas, Saas</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Backend Developer</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Node Js</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Postgree SQL</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MySql</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Version Control</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Gitlab</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3 ">
-                    <div class="card ">
-                        <img src="projects/logo2.JPG " class="card-img-top " alt="Project 1 " />
-                        <div class="card-body ">
-                            <p class="card-text text-center ">Latihan Dasar Kepemimpinan Siswa 2018.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 ">
-                    <div class="card ">
-                        <img src="projects/logo3.jpg " class="card-img-top " alt="Project 1 " />
-                        <div class="card-body ">
-                            <p class="card-text text-center">MARFEST 2018.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 ">
-                    <div class="card ">
-                        <img src="projects/logo4.jpg " class="card-img-top " alt="Project 1 " />
-                        <div class="card-body ">
-                            <p class="card-text text-center">Perwakilan Pasukan Pengibar Bendera .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 ">
-                    <div class="card ">
-                        <img src="projects/Logo5.JPG " class="card-img-top " alt="Project 1 " />
-                        <div class="card-body ">
-                            <p class="card-text text-center">Hari Santri Nasional 2019.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 ">
-        <path
-          fill="#fff "
-          fill-opacity="1 "
-          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z "
-        ></path>
-      </svg>
-    </section>
-    <!-- AKhir Projects -->
+        </section>
+    </main>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container ">
-            <div class="row text-center mb-3 ">
-                <div class="col ">
-                    <h2>Contact me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center ">
-                <div class="col-md-6 ">
-                    <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
-                        <strong>Hatur Nuhun!</strong> Pesan anda sudah kami tampi :D.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    <form name="AFA-contact-form">
-                        <div class="mb-3 ">
-                            <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control " id="name" aria-describedby="name" name="nama" />
-                        </div>
-                        <div class="mb-3 ">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-
-                        </div>
-                        <div class="mb-3 ">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3 " name="pesan"></textarea>
-                        </div>
-                        <button type="submit " class="btn btn-primary btn-kirim">Kirim</button>
-
-                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            Loading...
-                          </button>
-                </div>
-
-                </form>
-            </div>
-        </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 "><path fill="#0d6efd " fill-opacity="1 " d="M0,192L26.7,192C53.3,192,107,192,160,160C213.3,128,267,64,320,53.3C373.3,43,427,85,480,101.3C533.3,117,587,107,640,101.3C693.3,96,747,96,800,106.7C853.3,117,907,139,960,128C1013.3,117,1067,75,1120,58.7C1173.3,43,1227,53,1280,90.7C1333.3,128,1387,192,1413,224L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z "></path></svg>
-    </section>
-    <!-- Akhir Contact -->
-
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center pb-5 ">
-        <p>Createed with <i class="bi bi-heart-fill text-danger "></i> by
-            <a href="https://www.instagram.com/abdfahmia_/ " class="text-white fw-bold ">Abdul Fahmi Aziz</a></p>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+            Copyright &copy; 2021-
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            Abdul Fahmi Aziz All Rights Reserved
+        </span>
     </footer>
-    <!-- Akhir Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyK7OdYPG-MnW0w5Bi0EHFGEQEgvfWcaVG_hzBonxwTgAz1MoCJjsXCEX8hnEPJo_A_xQ/exec'
-        const form = document.forms['AFA-contact-form']
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="site-assets/js/scrollreveal.min.js"></script>
 
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading = document.querySelector('.btn-loading');
-        const myAlert = document.querySelector('.my-alert');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            // Ketika tombol sukses di klik
-            // tampilkan tombol loading, hilangkan tombol kirim
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => {
-                    console.log('Success!', response)
-                        // tampilkan tombol kirim, hilangkan tombol loading
-                    btnLoading.classList.toggle('d-none');
-                    btnKirim.classList.toggle('d-none');
-                    // tampilkan allert
-                    myAlert.classList.toggle('d-none');
-                    // reset formnya
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <!--=============== MAIN JS ===============-->
+    <script src="site-assets/js/main.js"></script>
 </body>
 
 </html>
