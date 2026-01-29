@@ -369,7 +369,8 @@ body.dark-theme {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  min-height: 250px;
+  width: 332px;
+  height: 250px;
 }
 
 .experience__card img {
@@ -553,9 +554,12 @@ body.dark-theme {
 
 @media screen and (min-width: 776px) {
 
-  .projects__content,
-  .experience__content {
+  .projects__content {
     grid-template-columns: repeat(2, 332px);
+  }
+
+  .experience__content {
+    grid-template-columns: repeat(2, 400px);
   }
 
   .skills__content {
@@ -612,10 +616,14 @@ body.dark-theme {
     column-gap: 2rem;
   }
 
-  .projects__content,
-  .experience__content {
+  .projects__content {
     gap: 2rem 3rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .experience__content {
+    gap: 2rem 3rem;
+    grid-template-columns: repeat(3, 400px);
   }
 
   .projects__modal,

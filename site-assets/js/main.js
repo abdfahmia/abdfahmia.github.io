@@ -2,14 +2,28 @@
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
+console.log('Tabs found:', tabs.length);
+console.log('Tab contents found:', tabContents.length);
+
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target)
+        const targetSelector = tab.dataset.target;
+        const target = document.querySelector(targetSelector);
+
+        console.log('Clicked tab:', tab.textContent.trim());
+        console.log('Target selector:', targetSelector);
+        console.log('Target element:', target);
 
         tabContents.forEach(tc => {
             tc.classList.remove('filters__active')
         })
-        target.classList.add('filters__active')
+
+        if (target) {
+            target.classList.add('filters__active')
+            console.log('Added filters__active to:', targetSelector);
+        } else {
+            console.error('Target not found for selector:', targetSelector);
+        }
 
         tabs.forEach(t => {
             t.classList.remove('filter-tab-active')
@@ -57,13 +71,13 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.profile__border`)
-sr.reveal(`.profile__name`, {delay: 500})
-sr.reveal(`.profile__profession`, {delay: 600})
-sr.reveal(`.profile__social`, {delay: 700})
-sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
-sr.reveal(`.profile__buttons`, {delay: 800})
-sr.reveal(`.filters__content`, {delay: 900})
-sr.reveal(`.filters`, {delay: 1000})
+sr.reveal(`.profile__name`, { delay: 500 })
+sr.reveal(`.profile__profession`, { delay: 600 })
+sr.reveal(`.profile__social`, { delay: 700 })
+sr.reveal(`.profile__info-group`, { interval: 100, delay: 700 })
+sr.reveal(`.profile__buttons`, { delay: 800 })
+sr.reveal(`.filters__content`, { delay: 900 })
+sr.reveal(`.filters`, { delay: 1000 })
 
 // function calculateYear(birthMonth, birthDay, birthYear) {
 //     const currentDate = new Date();
